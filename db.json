@@ -1,0 +1,19 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" },
+    { "id": 2, "title": "maka-paka", "author": "Szczfany lis" },
+    { "id": 3, "title": "react", "author": "Wojciech" },
+    { "id": 4, "title": "react", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment2", "postId": 23 },
+    { "id": 3, "body": "some comment3", "postId": 18 }
+  ],
+  "profile": { "name": "typicode" },
+  "pokemons": [
+    { "id": 1, "pokemon": "Pikachu", "type": "energy" },
+    { "id": 2, "pokemon": "Bulbasaur", "type": "green" },
+    { "id": 3, "pokemon": "Charmander", "type": "fire" }
+  ]
+}
