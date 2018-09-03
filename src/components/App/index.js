@@ -2,34 +2,12 @@ import React, { Component } from 'react';
 import { string } from 'prop-types';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
+import Home from '../Home';
+import About from '../About';
+import User from '../User'; // localhost:3000/users/1
+import NoMatch from '../NoMatch';
+
 import logo from '../../images/logo.svg';
-
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-);
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-    {/* <Link to="/">Home</Link> */ }
-  </div>
-);
-
-const User = ({ match }) => ( // eslint-disable-line
-  <div>
-    <h2>User</h2>
-    <p>id: { match.params.id }</p>
-  </div>
-);
-
-const NoMatch = ({ location }) => ( // eslint-disable-line
-  <div>
-    <h2>404</h2>
-    <p>No match for <code>{location.pathname}</code></p>
-  </div>
-);
 
 export default class App extends Component {
   state = {}
@@ -39,7 +17,7 @@ export default class App extends Component {
   };
 
   static defaultProps = {
-    test: 'test text',
+    test: 'test text from defaultProps',
   };
 
   render() {
@@ -59,7 +37,6 @@ export default class App extends Component {
           </header>
 
           <p className="App-intro">
-            tekst
             { test }
           </p>
 
